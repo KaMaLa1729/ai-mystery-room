@@ -1,8 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 
-const API_URL = "http://localhost:5000";
-
+const API_URL = "https://ai-mystery-room-x6en.onrender.com";
 export default function App() {
   const [screen, setScreen] = useState("home");
   const [premise, setPremise] = useState(
