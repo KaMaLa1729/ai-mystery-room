@@ -20,6 +20,10 @@ app.get("/api/health", (req, res) => {
   res.json({
     status: "ok",
     project: "AI Mystery Room",
+    database:
+  mongoose.connection.readyState === 1
+    ? "connected"
+    : "disconnected",
   });
 });
 
